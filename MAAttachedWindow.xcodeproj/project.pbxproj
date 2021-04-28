@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36A66A33199854A500DC3A73 /* MAAttachedWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A66A31199854A500DC3A73 /* MAAttachedWindow.h */; };
+		36A66A33199854A500DC3A73 /* MAAttachedWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A66A31199854A500DC3A73 /* MAAttachedWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A66A34199854A500DC3A73 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A66A32199854A500DC3A73 /* MAAttachedWindow.m */; };
 		36A66A651998555D00DC3A73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36A66A5C1998555D00DC3A73 /* InfoPlist.strings */; };
 		36A66A661998555D00DC3A73 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 36A66A5E1998555D00DC3A73 /* MainMenu.nib */; };
@@ -209,6 +209,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -402,6 +403,7 @@
 		36F7AC151998496700883D3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -411,6 +413,7 @@
 				INFOPLIST_FILE = MAAttachedWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -419,6 +422,7 @@
 		36F7AC161998496700883D3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -428,6 +432,7 @@
 				INFOPLIST_FILE = MAAttachedWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -443,6 +448,7 @@
 				36A66A55199854DA00DC3A73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36F7ABFB1998496700883D3A /* Build configuration list for PBXProject "MAAttachedWindow" */ = {
 			isa = XCConfigurationList;
